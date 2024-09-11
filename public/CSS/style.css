@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Portfolio de imagens */
+#portfolio{
+    background-color: #141414;
+    width: 100%;
+    height: 45rem;
+    display: flex;
+}
+
+#portfolio #contorno{
+    position: relative;
+    margin: auto;
+    width: 95%;
+    height: 90%;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: #FFA1A1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#portfolio #contorno .port{
+    height: 17rem;
+    width: 70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#instagram{
+    position: absolute;
+    height: 2rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+/* Fim portfolio de imagens */
+
+/* Área de anúncios */
+#anuncios{
+    background-color: rgb(255, 213, 213);
+    width: 100%;
+    height: 20rem;
+    /* text-align: center; */
+}
+
+#anuncios img{
+    height: 100%;
+}
+/* Fim área de anúncios */
+
+/* Área de roupas */
+#roupas{
+    background-color: black;
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    background-image: url("../img/background-roupas.svg");
+}
+
+#roupas .contorno2{
+    position: relative;
+    margin: auto;
+    width: 95%;
+    height: 90%;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: white;
+}
+
+#roupas .contorno2 div{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.562);
+    color: white;
+    font-family: "Inter", sans-serif;
+    width: 30rem;
+    left: 1.5rem;
+    bottom: 1.5rem;
+}
+
+#roupas .contorno2 div h1{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+#roupas .contorno2 div h2{
+    font-size: 2.2rem;
+    font-weight: 200;
+}
+/* Fim área de roupas */
