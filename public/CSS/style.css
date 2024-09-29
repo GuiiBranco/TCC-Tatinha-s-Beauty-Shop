@@ -97,40 +97,48 @@
 /* Fim área de roupas */
 
 /* Lista de Funcionários */
-    #funcionarios{
-        width: 100%;
-        height: 38rem;
-        display: flex;
-        flex-direction: column;
-    }
+#secFuncionarios{
+    background-color: blue;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+}
 
-    .funcionario{
-        background-color: white;
-        border-radius: 15px;
-        filter: drop-shadow(0 0 5px black);
-        width: 13rem;
-        height: 19rem;
-    }
+.funcionario{
+    margin: auto;
+    background-color: white;
+    width: 12rem;
+    height: 17rem;
+    border-radius: 0.5rem;
+}
 
-    .funcionario div{
-        display: flex;
-        flex-direction: column;
-    }
+.foto{
+    width: 12rem;
+    height: 14.5rem;
+}
 
-    .foto_func{
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        width: 13rem;
-        height: 16.5rem;
-    }
+.foto img{
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
 
-    .div_nome{
-        width: 100%;
-        height: 2.5rem;
-        display: flex;
-    }
+.nome{
+    height: 2.5rem;
+    width: 12rem;
+    display: flex;
+}
 
-    .nome{
-        margin: auto;
-    }
+.nome span{
+    margin: auto;
+}
+
+.contatos{
+    width: 12rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+}
+
+.contatos img{
+    height: 1.5rem;
+}
 /* Fim Lista de Funcionários */
