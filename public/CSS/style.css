@@ -172,13 +172,43 @@
 }
 /* Fim Lista de Funcionários */
 
+/* Informações do Salão */
+#infoSalao{
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 10rem;
+}
+
+#info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#info div{
+    margin-top: 5rem;
+    height: 7rem;
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    font-family: 'Inter';
+}
+
+#info div h2{
+    color: #FA8282;
+}
+/* Fim Informações do Salão */
+
 /* Fale Conosco */
 #contato{
-    margin-top: 5rem;
     background-color: #151515;
     width: 100%;
     height: 40rem;
     display: flex;
+    flex-direction: column;
     font-family: 'Inter';
 }
 
@@ -249,5 +279,10 @@
     outline: none;
     resize: none;
     font-family: 'Inter';
+}
+
+#logo{
+    height: 6rem;
+    margin-bottom: 3rem;
 }
 /* Fim Fale Conosco */
