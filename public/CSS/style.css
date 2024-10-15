@@ -9,7 +9,7 @@ body{
     flex-direction: column;
 }
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     background-color: #141414;
     width: 1rem;
 }
@@ -17,29 +17,35 @@ body{
 ::-webkit-scrollbar-thumb{
     background-color: #FF9090;
     border-radius: 2rem;
-}
+} */
+
 /* Header */
 #header{
     width: 100%;
-    height: 10rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     z-index: 1;
 }
 
-#header div{
-    height: 100%;
+#header .linksHeader{
+    height: 10rem;
     width: 55%;
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#header div a{
+#header .linksHeader a{
     text-decoration: none;
     color: white;
     font-size: 20px;
+}
+
+.logoHeader{
+    margin-top: 5rem;
+    min-height: 30vh;
 }
 /* Fim Header */
 
@@ -76,23 +82,35 @@ body{
     justify-content: center;
 }
 
-#portfolio #contorno .port{
-    height: 17rem;
-    width: 70%;
+.portDiv{
+    height: 50%;
+    width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 3rem;
 }
 
-/* .port-img{
+.polaroid{
+    background-image: url("../img/molduraPolaroid.png");
+    background-size: contain;
+    width: 230px;
+    height: 276px;
+    position: relative;
+    padding-top: 9px;
+    display: flex;
+    justify-content: center;
+}
+
+.polaroidImg{
+    width: 208px;
+    height: 216px;
     filter: grayscale(100%);
     transition: 0.5s;
 }
 
-.port-img:hover{
+.polaroid:hover > .polaroidImg{
     filter: grayscale(0%);
-} */
+}
 
 #instagramLink{
     position: absolute;
