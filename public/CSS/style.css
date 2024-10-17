@@ -9,7 +9,7 @@ body{
     flex-direction: column;
 }
 
-/* ::-webkit-scrollbar{
+::-webkit-scrollbar{
     background-color: #141414;
     width: 1rem;
 }
@@ -17,7 +17,7 @@ body{
 ::-webkit-scrollbar-thumb{
     background-color: #FF9090;
     border-radius: 2rem;
-} */
+}
 
 /* Header */
 #header{
@@ -52,11 +52,6 @@ body{
 /* Slideshow */
 #slideshow{
     background-color: black;
-}
-
-.imgSlide{
-    filter: opacity(70%);
-    filter: blur(2px);
 }
 /* Fim Slideshow */
 
@@ -93,12 +88,14 @@ body{
 .polaroid{
     background-image: url("../img/molduraPolaroid.png");
     background-size: contain;
+    background-repeat: no-repeat;
     width: 230px;
     height: 276px;
     position: relative;
     padding-top: 9px;
     display: flex;
     justify-content: center;
+    transition: 0.5s;
 }
 
 .polaroidImg{
@@ -141,26 +138,23 @@ body{
     display: flex;
 }
 
-.imgSalao{
+.divImgSalao{
     margin: auto;
     z-index: 1;
     display: flex;
+    align-items: center;
     height: 100%;
+    width: 65%;
 }
 
-.imgSalao img{
-    margin: auto;
-    height: 70%;
+.imgSalao{
+    width: 70%;
+    max-height: 80%;
 }
 
 .legendaSalao{
-    margin-left: 3rem;
-    display: flex;
-    align-items: center;
-}
-
-.legendaSalao img{
-    height: 50%;
+    width: 30%;
+    max-height: 80%;
 }
 
 .pattern{
@@ -478,3 +472,45 @@ body{
     margin-bottom: 3rem;
 }
 /* Fim Fale Conosco */
+
+/* Media Queries */
+@media (max-width: 1225px) {
+.polaroid{
+    height: 174px;
+    width: 145px;
+    padding-top: 6px;
+}
+
+.polaroidImg{
+    height: 136px;
+    width: 131px;
+}
+}
+/* Fim Media Queries */
+/* 
+.portDiv{
+    height: 50%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.polaroid{
+    background-image: url("../img/molduraPolaroid.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 276px;
+    position: relative;
+    padding-top: 9px;
+    display: flex;
+    justify-content: center;
+}
+
+.polaroidImg{
+    width: 208px;
+    height: 216px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+} */
