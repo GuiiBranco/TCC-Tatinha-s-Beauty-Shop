@@ -117,6 +117,66 @@ body{
 }
 /* Fim portfolio de imagens */
 
+/* Dia da Noiva */
+#diaDaNoiva{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+}
+
+.divDiaNoiva{
+    width: 90%;
+    max-width: 100rem;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+
+.divDiaNoiva div{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divDiaNoiva div a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.btnLinkDiaNoiva{
+    background-color: #ffc919;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    color: #141414;
+    font-size: 24px;
+    border-radius: 2rem;
+    filter: opacity(70%);
+}
+
+.btnLinkDiaNoiva:hover{
+    filter: opacity(100%);
+}
+
+.imgNoiva{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+.imgBouquet{
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    height: 55%;
+    z-index: 0;
+}
+/* Fim Dia da Noiva */
+
 /* Área de anúncios */
 #anuncios{
     background-color: rgb(255, 213, 213);
@@ -487,30 +547,3 @@ body{
 }
 }
 /* Fim Media Queries */
-/* 
-.portDiv{
-    height: 50%;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.polaroid{
-    background-image: url("../img/molduraPolaroid.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 230px;
-    height: 276px;
-    position: relative;
-    padding-top: 9px;
-    display: flex;
-    justify-content: center;
-}
-
-.polaroidImg{
-    width: 208px;
-    height: 216px;
-    filter: grayscale(100%);
-    transition: 0.5s;
-} */
