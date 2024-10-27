@@ -14,11 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="public/CSS/style.css">
-    <link rel="stylesheet" href="public/CSS/fonts.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/fonts.css">
     <!-- Bootstrap -->
-     <link rel="stylesheet" href="public/CSS/bootstrap.min.css">
-     <script defer src="public/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <script defer src="js/bootstrap.bundle.min.js"></script>
     <title>Tatinha´s Beauty Shop</title>
 </head>
 <body>
@@ -31,66 +31,66 @@
             <a href="#secFuncionarios">Nossas estrelas</a>
         </div>
         <div class="headerDiv">
-            <img src="public/img/Logo.svg" class="logoHeader">
+            <img src="img/Logo.svg" class="logoHeader">
         </div>
     </section>
 
     <section id="slideshow">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="public/img/imagemSlideUm.jpg" class="d-block w-100 imgSlide">
-              </div>
-              <div class="carousel-item">
-                <img src="public/img/imagemSlideDois.jpg" class="d-block w-100 imgSlide">
-              </div>
-              <div class="carousel-item">
-                <img src="public/img/imagemSlideTres.jpg" class="d-block w-100 imgSlide">
-              </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="img/imagemSlideUm.jpg" class="d-block w-100 imgSlide">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+            <img src="img/imagemSlideDois.jpg" class="d-block w-100 imgSlide">
+            </div>
+            <div class="carousel-item">
+            <img src="img/imagemSlideTres.jpg" class="d-block w-100 imgSlide">
+            </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     </section>
 
     <section id="portfolio">-
         <div id="contorno">
             <div class="portDiv">
                 <div class="polaroid">
-                    <img src="public/img/placeholderUm.png" class="polaroidImg">
+                    <img src="img/placeholderUm.png" class="polaroidImg">
                 </div>
                 <div class="polaroid">
-                    <img src="public/img/placeholderDois.png" class="polaroidImg">
+                    <img src="img/placeholderDois.png" class="polaroidImg">
                 </div>
                 <div class="polaroid">
-                    <img src="public/img/placeholderTres.png" class="polaroidImg">
+                    <img src="img/placeholderTres.png" class="polaroidImg">
                 </div>
                 <div class="polaroid">
-                    <img src="public/img/placeholderQuatro.png" class="polaroidImg">
+                    <img src="img/placeholderQuatro.png" class="polaroidImg">
                 </div>
             </div>
             <div class="portDiv">
                 <div class="polaroid">
-                    <img src="public/img/placeholderCinco.png" class="polaroidImg">
+                    <img src="img/placeholderCinco.png" class="polaroidImg">
                 </div>
                 <div class="polaroid">
-                    <img src="public/img/placeholderSeis.png" class="polaroidImg">
+                    <img src="img/placeholderSeis.png" class="polaroidImg">
                 </div>
                 <div class="polaroid">
-                    <img src="public/img/placeholderSete.png" class="polaroidImg">
+                    <img src="img/placeholderSete.png" class="polaroidImg">
                 </div>
                 <div class="polaroid">
-                    <img src="public/img/placeholderOito.png" class="polaroidImg">
+                    <img src="img/placeholderOito.png" class="polaroidImg">
                 </div>
             </div>
             <a href="https://www.instagram.com/tatinhas_beauty_shop/" target="_blank" id="instagramLink">
-                <img src="public/img/logo_instagram.svg" id="instagram-icone">
+                <img src="img/logo_instagram.svg" id="instagram-icone">
             </a>
         </div>
     </section>
@@ -98,30 +98,30 @@
     <section id="diaDaNoiva">
         <div class="divDiaNoiva">
             <div>
-                <img src="public/img/tituloDiaNoiva.png" class="tituloDiaNoiva">
+                <img src="img/tituloDiaNoiva.png" class="tituloDiaNoiva">
                 <a href="https://www.instagram.com/tatinhas_beauty_shop/" target="_blank">
                     <span class="btnLinkDiaNoiva">confira nossos pacotes</span>
                 </a>
             </div>
-            <img src="public/img/bouquet.png" class="imgBouquet">
-            <img src="public/img/imagemNoiva.png" class="imgNoiva">
+            <img src="img/bouquet.png" class="imgBouquet">
+            <img src="img/imagemNoiva.png" class="imgNoiva">
         </div>
     </section>
 
     <section id="anuncios">
-        <img src="public/img/promoHalloween.png">
+        <img src="img/promoHalloween.png">
     </section>
 
     <section id="fotosSalao">
         <div class="divImgSalao">
-            <img src="public/img/imagensSalao.svg" class="imgSalao">
-            <img src="public/img/descSalao.svg" class="legendaSalao">
+            <img src="img/imagensSalao.svg" class="imgSalao">
+            <img src="img/descSalao.svg" class="legendaSalao">
         </div>
-        <img class="pattern" src="public/img/fotosSalaoPattern.png">
+        <img class="pattern" src="img/fotosSalaoPattern.png">
     </section>
 
     <section id="roupas">
-        <img src="public/img/background-roupas.svg">
+        <img src="img/background-roupas.svg">
         <div class="contorno2">
             <div>
                 <h1>GARANTA SEU LOOK</h1>
@@ -172,7 +172,7 @@
             <div class="containerFunc">
                 <div class="funcionario">
                     <div class="foto">
-                        <img src="public/img/funcionario1.jpeg">
+                        <img src="img/funcionario1.jpeg">
                     </div>
                     <div class="nome">
                         <span>Juliana Vieira</span>
@@ -180,20 +180,20 @@
                 </div>
                 <div class="contatos">
                     <a href="#">
-                        <img src="public/img/instagramLogo copy.svg">
+                        <img src="img/instagramLogo copy.svg">
                     </a>
                     <a href="#">
-                        <img src="public/img/xLogo.svg">
+                        <img src="img/xLogo.svg">
                     </a>
                     <a href="#">
-                        <img src="public/img/facebookLogo copy.svg">
+                        <img src="img/facebookLogo copy.svg">
                     </a>
                 </div>
             </div>
             <div class="containerFunc">
                 <div class="funcionario">
                     <div class="foto">
-                        <img src="public/img/funcionario2.jpeg">
+                        <img src="img/funcionario2.jpeg">
                     </div>
                     <div class="nome">
                         <span>Pamela Moraes</span>
@@ -201,20 +201,20 @@
                 </div>
                 <div class="contatos">
                     <a href="#">
-                        <img src="public/img/instagramLogo copy.svg">
+                        <img src="img/instagramLogo copy.svg">
                     </a>
                     <a href="#">
-                        <img src="public/img/xLogo.svg">
+                        <img src="img/xLogo.svg">
                     </a>
                     <a href="#">
-                        <img src="public/img/facebookLogo copy.svg">
+                        <img src="img/facebookLogo copy.svg">
                     </a>
                 </div>
             </div>
             <div class="containerFunc">
                 <div class="funcionario">
                     <div class="foto">
-                        <img src="public/img/funcionario3.jpeg">
+                        <img src="img/funcionario3.jpeg">
                     </div>
                     <div class="nome">
                         <span>Leandra Mendes</span>
@@ -222,20 +222,20 @@
                 </div>
                 <div class="contatos">
                     <a href="#">
-                        <img src="public/img/instagramLogo copy.svg">
+                        <img src="img/instagramLogo copy.svg">
                     </a>
                     <a href="#">
-                        <img src="public/img/xLogo.svg">
+                        <img src="img/xLogo.svg">
                     </a>
                     <a href="#">
-                        <img src="public/img/facebookLogo copy.svg">
+                        <img src="img/facebookLogo copy.svg">
                     </a>
                 </div>
             </div>
             <div class="containerFunc">
                 <div class="funcionario">
                     <div class="foto">
-                        <img src="public/img/funcionario4.jpg">
+                        <img src="img/funcionario4.jpg">
                     </div>
                     <div class="nome">
                         <span>Rebeca Vieira</span>
@@ -243,20 +243,20 @@
                 </div>
                 <div class="contatos">
                     <a href="#">
-                        <img src="public/img/instagramLogo copy.svg">
+                        <img src="img/instagramLogo copy.svg">
                     </a>
                     <a href="#">
-                        <img src="public/img/xLogo.svg">
+                        <img src="img/xLogo.svg">
                     </a>
                     <a href="#">
-                        <img src="public/img/facebookLogo copy.svg">
+                        <img src="img/facebookLogo copy.svg">
                     </a>
                 </div>
             </div>
             <div class="containerFunc">
                 <div class="funcionario">
                     <div class="foto">
-                        <img src="public/img/funcionario5.jpg">
+                        <img src="img/funcionario5.jpg">
                     </div>
                     <div class="nome">
                         <span>Maria Clara</span>
@@ -264,13 +264,13 @@
                 </div>
                 <div class="contatos">
                     <a href="#">
-                        <img src="public/img/instagramLogo copy.svg">
+                        <img src="img/instagramLogo copy.svg">
                     </a>
                     <a href="#">
-                        <img src="public/img/xLogo.svg">
+                        <img src="img/xLogo.svg">
                     </a>
                     <a href="#">
-                        <img src="public/img/facebookLogo copy.svg">
+                        <img src="img/facebookLogo copy.svg">
                     </a>
                 </div>
             </div>
@@ -326,7 +326,7 @@
             </div>
             <textarea name="#" id="areaTexto" rows="10" placeholder="Mensagem:"></textarea>
         </div>
-        <img src="public/img/Logo.svg" id="logo">
+        <img src="img/Logo.svg" id="logo">
     </section>
 </body>
 </html>
