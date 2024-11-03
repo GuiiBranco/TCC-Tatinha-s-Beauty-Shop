@@ -30,9 +30,6 @@
             <a href="#infoSalao">Contatos</a>
             <a href="#secFuncionarios">Nossas estrelas</a>
         </div>
-        <div class="headerDiv">
-            <img src="img/Logo.svg" class="logoHeader">
-        </div>
     </section>
 
     <section id="slideshow">

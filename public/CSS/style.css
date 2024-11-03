@@ -43,11 +43,6 @@ body{
     font-size: 20px;
     font-family: 'Jacques Francois';
 }
-
-.logoHeader{
-    margin-top: 5rem;
-    min-height: 30vh;
-}
 /* Fim Header */
 
 /* Slideshow */
@@ -84,14 +79,15 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1170px;
 }
 
 .polaroid{
     background-image: url("../img/molduraPolaroid.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 215px;
-    height: 258px;
+    width: 192px;
+    height: 230px;
     position: relative;
     padding-top: 9px;
     display: flex;
@@ -100,8 +96,8 @@ body{
 }
 
 .polaroidImg{
-    width: 195px;
-    height: 202px;
+    width: 174px;
+    height: 180px;
     filter: grayscale(100%);
     transition: 0.5s;
 }
@@ -121,7 +117,7 @@ body{
 /* Dia da Noiva */
 #diaDaNoiva{
     width: 100%;
-    height: 40rem;
+    height: 36rem;
     display: flex;
 }
 
@@ -139,6 +135,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.tituloDiaNoiva{
+    height: 35%;
 }
 
 .divDiaNoiva div a{
@@ -536,49 +538,33 @@ body{
 /* Fim Fale Conosco */
 
 /* Media Queries */
-@media (max-width: 1225px) {
+@media (max-width: 1215px) {
 
-.linksHeader a{
-    font-size: 5px;
+#portfolio{
+    height: 28rem;
 }
 
 .polaroid{
-    height: 174px;
-    width: 145px;
-    padding-top: 6px;
+    width: 127px;
+    height: 152px;
 }
 
 .polaroidImg{
-    height: 136px;
-    width: 131px;
+    width: 113px;
+    height: 118px;
 }
 
-#portfolio{
-    height: 30rem;
+#header .linksHeader a{
+    font-size: 13px;
 }
 
 #diaDaNoiva{
     height: 20rem;
 }
 
-.tituloDiaNoiva{
-    width: 70%;
+.btnLinkDiaNoiva{
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    font-size: 12px;
 }
 
-#fotosSalao{
-    height: 25rem;
 }
-
-.pattern{
-    height: 25rem;
-}
-
-#roupas{
-    height: 25rem;
-}
-
-.nomeInput input, .email input{
-    width: 80%;
-}
-}
-/* Fim Media Queries */
