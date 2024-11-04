@@ -325,5 +325,9 @@
         </div>
         <img src="img/Logo.svg" id="logo">
     </section>
+
+    <a href="#" class="whatsappFlutuante">
+        <img src="img/iconeWhatsapp.svg">
+    </a>
 </body>
 </html>

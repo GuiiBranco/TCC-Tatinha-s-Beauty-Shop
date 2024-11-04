@@ -80,6 +80,7 @@ body{
     justify-content: space-between;
     align-items: center;
     max-width: 1170px;
+    position: relative;
 }
 
 .polaroid{
@@ -93,6 +94,17 @@ body{
     display: flex;
     justify-content: center;
     transition: 0.5s;
+}
+
+.polaroid:hover{
+    position: relative;
+    width: 215px;
+    height: 258px;
+}
+
+.polaroid:hover > .polaroidImg{
+    width: 195px;
+    height: 202px;
 }
 
 .polaroidImg{
@@ -197,7 +209,7 @@ body{
     position: relative;
     background-color: #F2EAE4;
     width: 100%;
-    height: 45rem;
+    height: 42rem;
     display: flex;
 }
 
@@ -537,6 +549,19 @@ body{
 }
 /* Fim Fale Conosco */
 
+/* Link Whatsapp Flutuante */
+.whatsappFlutuante{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 100;
+}
+
+.whatsappFlutuante img{
+    height: 5rem;
+}
+/* Fim Link Whatsapp Flutuante */
+
 /* Media Queries */
 @media (max-width: 1215px) {
 
@@ -554,6 +579,16 @@ body{
     height: 118px;
 }
 
+.polaroid:hover{
+    width: 150px;
+    height: 180px;
+}
+
+.polaroid:hover > .polaroidImg{
+    width: 133px;
+    height: 146px;
+}
+
 #header .linksHeader a{
     font-size: 13px;
 }
@@ -567,4 +602,15 @@ body{
     font-size: 12px;
 }
 
+#fotosSalao{
+    height: 30rem;
+}
+
+.pattern{
+    height: 30rem;
+}
+
+#roupas{
+height: 25rem;
+}
 }
