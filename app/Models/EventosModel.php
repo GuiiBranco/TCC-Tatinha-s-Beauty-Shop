@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Imagens extends Model
+class EventosModel extends Model
 {
-    protected $table            = 'imagens';
-    protected $primaryKey       = 'imagensid';
+    protected $table            = 'Eventos';
+    protected $primaryKey       = 'idEventos';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ["nome", "imagem"];
+    protected $allowedFields    = ['nome', 'imagem'];
 
     protected bool $allowEmptyInserts = false;
 
