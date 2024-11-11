@@ -7,12 +7,12 @@ use CodeIgniter\Model;
 class FuncionariosModel extends Model
 {
     protected $table            = 'funcionarios';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'idFuncionario';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['nome','imagem','facebook','instagram','twitter'];
 
     protected bool $allowEmptyInserts = false;
 
