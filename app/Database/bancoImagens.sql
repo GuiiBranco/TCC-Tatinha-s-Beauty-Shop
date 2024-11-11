@@ -4,7 +4,7 @@ USE imagensDB;
 CREATE TABLE Eventos(
     idEventos INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(30) NOT NULL,
-    imagem VARCHAR(50) NOT NULL UNIQUE
+    imagem VARCHAR(50) NOT NULL
 )Engine:InnoDB;
 
 CREATE TABLE Portfolio(
