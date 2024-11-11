@@ -12,4 +12,6 @@ $routes->get('/cadPortfolio', 'ControllerPortfolio::index');
 $routes->post('/salvarPortfolio', 'ControllerPortfolio::salvar');
 $routes->get('/cadFuncionarios', 'ControllerFuncionarios::index');
 $routes->post('/salvarFuncionarios', 'ControllerFuncionarios::salvar');
-$routes->get('/cadAdmin', 'ControllerAdmin::index');
+$routes->get('/adminInicio', 'ControllerAdmin::index');
+
+$routes->get('/editarImagens', 'ControllerAdmin::edit');

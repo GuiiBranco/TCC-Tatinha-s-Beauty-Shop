@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #202426;
+    display: flex;
+}
+
+main{
+    margin: auto;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+a, span{
+    text-decoration: none;
+    color: white;
+    background-color: #F28D8D;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Inter';
+}
