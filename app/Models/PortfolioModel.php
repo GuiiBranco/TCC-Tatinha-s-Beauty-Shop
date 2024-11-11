@@ -6,13 +6,13 @@ use CodeIgniter\Model;
 
 class PortfolioModel extends Model
 {
-    protected $table            = 'portfolios';
-    protected $primaryKey       = 'id';
+    protected $table            = 'Portfolio';
+    protected $primaryKey       = 'idPortfolio';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['nome','imagem'];
 
     protected bool $allowEmptyInserts = false;
 

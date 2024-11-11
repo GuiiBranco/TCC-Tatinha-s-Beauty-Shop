@@ -20,7 +20,7 @@ class ControllerEventos extends BaseController
 
         $nomeAleatorio = $imagem->getRandomName();
         $dados["imagem"] = $nomeAleatorio;
-        $imagem->move("public/upload/eventos", $nomeAleatorio);
+        $imagem->move("../public/upload/eventos", $nomeAleatorio);
 
         $eventosModel = new EventosModel();
         $eventosModel->save($dados);
