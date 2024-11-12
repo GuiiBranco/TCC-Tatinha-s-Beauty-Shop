@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/cadastro.css">
+    <link rel="stylesheet" href="CSS/fonts.css">
     <title>Cadastrar Imagens do Portfolio</title>
 </head>
 <body>
-    <h1>Cadastrando Imagens do Portfolio</h1>
-    <form action="/salvarPortfolio" method="POST" enctype="multipart/form-data">
-        <div>
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" required>
-        </div>
-        <div>
-            <label for="imagem">Imagem:</label>
-            <input type="file" name="imagem" id="imagem" accept=".jpg,.jpeg" required>
-        </div>
-        <button type="submit">SALVAR</button>
-    </form>
+    <main>
+        <h1>Cadastrando Imagens do Portfolio</h1>
+        <form action="/salvarPortfolio" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div>
+                <label for="imagem">Imagem:</label>
+                <input type="file" name="imagem" id="imagem" accept=".jpg,.jpeg" required>
+            </div>
+            <button type="submit">SALVAR</button>
+        </form>
+    </main>
+
+    <div id="listagemFotos"></div>
 </body>
 </html>
