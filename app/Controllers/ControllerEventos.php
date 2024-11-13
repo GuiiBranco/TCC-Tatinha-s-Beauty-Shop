@@ -10,7 +10,10 @@ class ControllerEventos extends BaseController
 {
     public function index()
     {
-        return view("cadEventos");
+        $eventosModel = new EventosModel();
+        $dados = array();
+        $dados["imagens"] = $eventosModel->findAll();
+        return view("cadEventos", $dados);
     }
 
     public function salvar()
@@ -26,5 +29,13 @@ class ControllerEventos extends BaseController
         $eventosModel->save($dados);
 
         return redirect()->to(base_url("/cadEventos"));
+    }
+
+    public function listar()
+    {
+        $eventosModel = new EventosModel();
+        $dados = array();
+        $dados["imagens"] = $eventosModel->findAll();
+        return view("cadEventos");
     }
 }

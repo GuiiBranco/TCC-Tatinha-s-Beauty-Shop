@@ -23,6 +23,20 @@
         </form>
     </main>
 
-    <div id="listagemFotos"></div>
+    <div id="listagemFotos">
+        <?php foreach($imagens as $item): ?>
+
+            <div class="arquivo">
+                <div>
+                    <img src="upload/eventos/<?= $item["imagem"] ?>" class="imagem">
+                </div>
+                <span class="nome">nome: <?= $item["nome"] ?></span>
+                <a href="#">
+                    <img src="img/lixeira.svg" class="lixeira">
+                </a>
+            </div>
+
+        <?php endforeach ?>
+    </div>
 </body>
 </html>

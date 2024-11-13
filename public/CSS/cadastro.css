@@ -32,3 +32,32 @@ form{
 button{
     width: 6rem;
 }
+
+.arquivo{
+    width: 100%;
+    border-bottom: solid #F28D8D;
+    color: white;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.arquivo div{
+    min-width: 3rem;
+}
+
+.imagem{
+    height: 2rem;
+}
+
+.nome{
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+
+.lixeira{
+    height: 2rem;
+    
+}
