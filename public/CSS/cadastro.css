@@ -9,6 +9,9 @@ body{
     background-color: #202426;
     height: 100vh;
     color: #F28D8D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main{
@@ -60,4 +63,18 @@ button{
 .lixeira{
     height: 2rem;
     
+}
+
+table{
+    margin-top: 1rem;
+    width: 80%;
+}
+
+tr, td{
+    outline: solid pink;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
 }

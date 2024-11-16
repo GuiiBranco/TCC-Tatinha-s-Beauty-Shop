@@ -23,6 +23,19 @@
         </form>
     </main>
 
-    <div id="listagemFotos"></div>
+    <table>
+        <tr>
+            <th>Imagem</th>
+            <th>Nome</th>
+            <th>Opções</th>
+        </tr>
+        <?php foreach($imagens as $item): ?>
+            <tr>
+                <td><img src="upload/portfolio/<?= $item["imagem"] ?>" class="imagem"></td>
+                <td><?= $item["nome"] ?></td>
+                <td><a href="#">🗑️</a></td>
+            </tr>
+        <?php endforeach ?>
+    </table>
 </body>
 </html>

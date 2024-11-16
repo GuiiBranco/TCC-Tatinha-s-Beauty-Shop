@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+}
+
+form{
+    border: solid black;
+    height: 30rem;
+    width: 25rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.email, .senha{
+    margin-bottom: 3rem;
+}

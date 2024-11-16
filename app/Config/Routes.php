@@ -14,4 +14,7 @@ $routes->get('/cadFuncionarios', 'ControllerFuncionarios::index');
 $routes->post('/salvarFuncionarios', 'ControllerFuncionarios::salvar');
 $routes->get('/adminInicio', 'ControllerAdmin::index');
 
+$routes->get('/login', 'ControllerLogin::index');
+$routes->post('/login/logar', 'ControllerLogin::logar');
+
 $routes->get('/editarImagens', 'ControllerAdmin::edit');

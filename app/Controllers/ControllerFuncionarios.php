@@ -10,7 +10,10 @@ class ControllerFuncionarios extends BaseController
 {
     public function index()
     {
-        return view("cadFuncionarios");
+        $funcionariosModel = new FuncionariosModel();
+        $dados = array();
+        $dados["imagens"] = $funcionariosModel->findAll();
+        return view("cadFuncionarios", $dados);
     }
 
     public function salvar()

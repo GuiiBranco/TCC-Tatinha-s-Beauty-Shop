@@ -10,7 +10,10 @@ class ControllerPortfolio extends BaseController
 {
     public function index()
     {
-        return view("cadPortfolio");
+        $portfolioModel = new PortfolioModel();
+        $dados = array();
+        $dados["imagens"] = $portfolioModel->findAll();
+        return view("cadPortfolio", $dados);
     }
 
     public function salvar()

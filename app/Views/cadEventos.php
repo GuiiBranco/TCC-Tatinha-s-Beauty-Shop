@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="CSS/cadastro.css">
     <link rel="stylesheet" href="CSS/fonts.css">
     <title>Cadastrar Imagens de Eventos</title>
+
 </head>
 <body>
     <main>
@@ -23,20 +24,19 @@
         </form>
     </main>
 
-    <div id="listagemFotos">
+    <table>
+        <tr>
+            <th>Imagem</th>
+            <th>Nome</th>
+            <th>Opções</th>
+        </tr>
         <?php foreach($imagens as $item): ?>
-
-            <div class="arquivo">
-                <div>
-                    <img src="upload/eventos/<?= $item["imagem"] ?>" class="imagem">
-                </div>
-                <span class="nome">nome: <?= $item["nome"] ?></span>
-                <a href="#">
-                    <img src="img/lixeira.svg" class="lixeira">
-                </a>
-            </div>
-
+            <tr>
+                <td><img src="upload/eventos/<?= $item["imagem"] ?>" class="imagem"></td>
+                <td><?= $item["nome"] ?></td>
+                <td><a href="#">🗑️</a></td>
+            </tr>
         <?php endforeach ?>
-    </div>
+    </table>
 </body>
 </html>

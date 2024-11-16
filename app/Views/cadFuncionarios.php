@@ -35,6 +35,25 @@
         </form>
     </main>
 
-    <div id="listagemFotos"></div>
+    <table>
+        <tr>
+            <th>Imagem</th>
+            <th>Nome</th>
+            <th>Instagram</th>
+            <th>Facebook</th>
+            <th>Twitter</th>
+            <th>Opções</th>
+        </tr>
+        <?php foreach($imagens as $item): ?>
+            <tr>
+                <td><img src="upload/funcionarios/<?= $item["imagem"] ?>" class="imagem"></td>
+                <td><?= $item["nome"] ?></td>
+                <td><?= $item["instagram"] ?></td>
+                <td><?= $item["facebook"] ?></td>
+                <td><?= $item["twitter"] ?></td>
+                <td><a href="#">🗑️</a></td>
+            </tr>
+        <?php endforeach ?>
+    </table>
 </body>
 </html>

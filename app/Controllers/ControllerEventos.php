@@ -30,12 +30,4 @@ class ControllerEventos extends BaseController
 
         return redirect()->to(base_url("/cadEventos"));
     }
-
-    public function listar()
-    {
-        $eventosModel = new EventosModel();
-        $dados = array();
-        $dados["imagens"] = $eventosModel->findAll();
-        return view("cadEventos");
-    }
 }
