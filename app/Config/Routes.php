@@ -5,23 +5,15 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+
+ // Página principal
 $routes->get('/', 'Home::index');
 
-$routes->group("admin", function($routes){
-    $routes->get('editarSecoes', 'ControllerAdmin::editar');
-});
+// Tela de login
+$routes->get('/login', 'AdminController::index');
+$routes->post('/logar', 'AdminController::logar');
+$routes->get('/editSecoes', 'AdminController::menu');
 
-// $routes->get('/cadEventos', 'ControllerEventos::index');
-// $routes->post('/salvarEvento', 'ControllerEventos::salvar');
-// $routes->get('/cadPortfolio', 'ControllerPortfolio::index');
-// $routes->post('/salvarPortfolio', 'ControllerPortfolio::salvar');
-// $routes->get('/cadFuncionarios', 'ControllerFuncionarios::index');
-// $routes->post('/salvarFuncionarios', 'ControllerFuncionarios::salvar');
-$routes->get('/adminInicio', 'ControllerAdmin::index');
-
-$routes->get('/Secoes/secaoPortfolio', 'ControllerPortfolio::editar');
-
-$routes->get('/login', 'ControllerLogin::index');
-$routes->post('/login/logar', 'ControllerLogin::logar');
-
-$routes->get('/editarImagens', 'ControllerAdmin::gerenciar');
+// Controllers para cadastro
+$routes->get('/portfolio', 'PortfolioController::index');
+$routes->post('/cadPortfolio', 'PortfolioController::adicionarImagem');

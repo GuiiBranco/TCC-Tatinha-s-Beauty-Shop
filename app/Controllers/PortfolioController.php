@@ -6,33 +6,36 @@ use App\Controllers\BaseController;
 use App\Models\PortfolioModel;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class ControllerPortfolio extends BaseController
+class PortfolioController extends BaseController
 {
     public function index()
     {
-        $portfolioModel = new PortfolioModel();
         $dados = array();
-        $dados["imagens"] = $portfolioModel->findAll();
-        return view("cadPortfolio", $dados);
+        $portfolioModel = new PortfolioModel();
+        $itens = $portfolioModel->findAll();
+
+        $dados["imagens"] = $itens;
+
+        return view("secoes/secaoPortfolio", $dados);
     }
 
-    public function salvar()
+    public function adicionarImagem()
     {
         $dados = $this->request->getPost();
         $imagem = $this->request->getFile("imagem");
 
         $nomeAleatorio = $imagem->getRandomName();
         $dados["imagem"] = $nomeAleatorio;
-        $imagem->move("../public/upload/portfolio", $nomeAleatorio);
 
         $portfolioModel = new PortfolioModel();
         $portfolioModel->save($dados);
 
-        return redirect()->to(base_url("/cadPortfolio"));
+        $imagem->move("upload/portfolio", $nomeAleatorio);
+        return redirect()->to(base_url("/portfolio"));
     }
 
-    public function editar()
+    public function deletarImagem()
     {
-        return view("/Secoes/secaoPortfolio");
+        //
     }
 }

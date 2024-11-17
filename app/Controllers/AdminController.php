@@ -6,11 +6,11 @@ use App\Controllers\BaseController;
 use App\Models\LoginModel;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class ControllerLogin extends BaseController
+class AdminController extends BaseController
 {
     public function index()
     {
-        return view('admin/login');
+        return view("admin/login");
     }
 
     public function logar()
@@ -33,6 +33,11 @@ class ControllerLogin extends BaseController
 
         session()->set("idUsuario", $usuario["idAdmin"]);
         session()->set("nome", $usuario["nome"]);
-        return redirect()->to(base_url("/editarImagens"));
+        return redirect()->to(base_url("/editSecoes"));
+    }
+
+    public function menu()
+    {
+        return view("admin/editarSecoes");
     }
 }

@@ -12,7 +12,7 @@ class PortfolioModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nome','imagem'];
+    protected $allowedFields    = ["nome", "imagem"];
 
     protected bool $allowEmptyInserts = false;
 

@@ -9,7 +9,7 @@
 </head>
 <body>
     <main>
-        <a href="/Secoes/secaoPortfolio" class="link">
+        <a href="/portfolio" class="link">
             <span>Seção do Portfólio</span>
         </a>
         <a href="#" class="link">
