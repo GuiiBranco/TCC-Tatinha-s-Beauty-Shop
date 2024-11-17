@@ -17,11 +17,11 @@
     </head>
     <body>
         <main>
-            <a href="#" class="link">
+            <a href="/editarSecoes" class="link">
                 <span>Editar Seções</span>
             </a>
             <a href="/editarImagens" class="link">
-                <span>Editar Imagens</span>
+                <span>Gerenciar Imagens</span>
             </a>
         </main>
     </body>

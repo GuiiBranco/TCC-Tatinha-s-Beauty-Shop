@@ -30,4 +30,9 @@ class ControllerPortfolio extends BaseController
 
         return redirect()->to(base_url("/cadPortfolio"));
     }
+
+    public function editar()
+    {
+        return view("/Secoes/secaoPortfolio");
+    }
 }

@@ -12,8 +12,13 @@ class ControllerAdmin extends BaseController
         return view("admin/inicio");
     }
 
-    public function edit()
+    public function gerenciar()
     {
         return view("../Views/admin/editarImagens.php");
+    }
+
+    public function editar()
+    {
+        return view("../Views/admin/editarSecoes.php");
     }
 }

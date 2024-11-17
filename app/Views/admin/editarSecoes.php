@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/admin.css">
     <link rel="stylesheet" href="CSS/fonts.css">
-    <title>Editar Imagens</title>
+    <title>Editar Seções</title>
 </head>
 <body>
     <main>
-        <a href="/cadPortfolio" class="link">
-            <span>Imagens de Portfólio</span>
+        <a href="/Secoes/secaoPortfolio" class="link">
+            <span>Seção do Portfólio</span>
         </a>
-        <a href="/cadEventos" class="link">
-            <span>Imagens de Eventos</span>
+        <a href="#" class="link">
+            <span>Seção de Eventos</span>
         </a>
-        <a href="/cadFuncionarios" class="link">
-            <span>Funcionários</span>
+        <a href="#" class="link">
+            <span>Seção de Funcionários</span>
         </a>
     </main>
 </body>

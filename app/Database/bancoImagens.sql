@@ -28,3 +28,8 @@ CREATE TABLE admin(
     email VARCHAR(50) NOT NULL UNIQUE,
     senha VARCHAR(50) NOT NULL
 )Engine:InnoDB;
+
+CREATE TABLE exibPortfolio(
+    idImagem INT PRIMARY KEY AUTO_INCREMENT,
+    imagem VARCHAR(50) NOT NULL UNIQUE
+)Engine:InnoDB;
