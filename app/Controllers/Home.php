@@ -23,6 +23,6 @@ class Home extends BaseController
         $itens = $portfolioModel->findAll();
         $dados["imagens"] = $itens;
 
-        var_dump($dados["imagens"]);
+        var_dump($itens);
     }
 }

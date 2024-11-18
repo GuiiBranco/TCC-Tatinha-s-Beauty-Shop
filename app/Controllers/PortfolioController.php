@@ -38,6 +38,7 @@ class PortfolioController extends BaseController
     {
         $portfolioModel = new PortfolioModel();
         $portfolioModel->where('idPortfolio', $id)->delete();
+        // delete_files("upload/portfolio/#");
         return redirect()->to(base_url("/portfolio"));
     }
 }

@@ -60,6 +60,42 @@
         <div id="contorno">
             <div class="portDiv">
                 <div class="polaroid">
+                    <img src="upload/portfolio/<?php echo $imagens[0]["imagem"] ?>" class="polaroidImg">
+                </div>
+                <div class="polaroid">
+                    <img src="upload/portfolio/<?php echo $imagens[1]["imagem"] ?>" class="polaroidImg">
+                </div>
+                <div class="polaroid">
+                    <img src="upload/portfolio/<?php echo $imagens[2]["imagem"] ?>" class="polaroidImg">
+                </div>
+                <div class="polaroid">
+                    <img src="upload/portfolio/<?php echo $imagens[3]["imagem"] ?>" class="polaroidImg">
+                </div>
+            </div>
+            <div class="portDiv">
+                <div class="polaroid">
+                    <img src="upload/portfolio/<?php echo $imagens[4]["imagem"] ?>" class="polaroidImg">
+                </div>
+                <div class="polaroid">
+                    <img src="upload/portfolio/<?php echo $imagens[5]["imagem"] ?>" class="polaroidImg">
+                </div>
+                <div class="polaroid">
+                    <img src="upload/portfolio/<?php echo $imagens[6]["imagem"] ?>" class="polaroidImg">
+                </div>
+                <div class="polaroid">
+                    <img src="upload/portfolio/<?php echo $imagens[7]["imagem"] ?>" class="polaroidImg">
+                </div>
+            </div>
+            <a href="https://www.instagram.com/tatinhas_beauty_shop/" target="_blank" id="instagramLink">
+                <img src="img/logo_instagram.svg" id="instagram-icone">
+            </a>
+        </div>
+    </section>
+
+    <!-- <section id="portfolio">-
+        <div id="contorno">
+            <div class="portDiv">
+                <div class="polaroid">
                     <img src="img/placeholderUm.png" class="polaroidImg">
                 </div>
                 <div class="polaroid">
@@ -90,7 +126,7 @@
                 <img src="img/logo_instagram.svg" id="instagram-icone">
             </a>
         </div>
-    </section>
+    </section> -->
 
     <section id="diaDaNoiva">
         <div class="divDiaNoiva">
@@ -330,4 +366,8 @@
         <img src="img/iconeWhatsapp.svg">
     </a>
 </body>
+
+<?php
+    var_dump($imagens[0]["imagem"]);
+?>
 </html>
