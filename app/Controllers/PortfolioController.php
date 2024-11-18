@@ -37,8 +37,15 @@ class PortfolioController extends BaseController
     public function deletarImagem($id)
     {
         $portfolioModel = new PortfolioModel();
+        
+        $dados = $portfolioModel->find($id);
+        $arquivoImagem = $dados["imagem"];
+        if(file_exists("upload/portfolio/".$arquivoImagem)){
+            unlink("upload/portfolio/".$arquivoImagem);
+        }
+
         $portfolioModel->where('idPortfolio', $id)->delete();
-        // delete_files("upload/portfolio/#");
+
         return redirect()->to(base_url("/portfolio"));
     }
 }
