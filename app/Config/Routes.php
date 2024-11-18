@@ -17,3 +17,4 @@ $routes->get('/editSecoes', 'AdminController::menu');
 // Controllers para cadastro
 $routes->get('/portfolio', 'PortfolioController::index');
 $routes->post('/cadPortfolio', 'PortfolioController::adicionarImagem');
+$routes->get('/deletar/(:num)', 'PortfolioController::deletarImagem/$1');

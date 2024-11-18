@@ -34,8 +34,10 @@ class PortfolioController extends BaseController
         return redirect()->to(base_url("/portfolio"));
     }
 
-    public function deletarImagem()
+    public function deletarImagem($id)
     {
-        //
+        $portfolioModel = new PortfolioModel();
+        $portfolioModel->where('idPortfolio', $id)->delete();
+        return redirect()->to(base_url("/portfolio"));
     }
 }
