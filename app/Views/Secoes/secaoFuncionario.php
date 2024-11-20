@@ -76,6 +76,8 @@
         <form action="/cadFuncionarios" method="post" enctype="multipart/form-data" class="contornoInterno">
             <label for="imagem">Adicionar nova imagem:</label>
             <input type="file" name="imagem" class="imagem">
+            <label for="nome">Nome do funcionário:</label>
+            <input type="text" name="nome" class="nome">
             <button type="submit">Salvar Imagem</button>
         </form>
     </section>

@@ -166,7 +166,32 @@
             NOSSAS ESTRELAS
         </span>
         <div id="divFuncionarios">
-            <div class="containerFunc">
+
+            <?php foreach ($imagensFuncionarios as $funcionarios): ?>
+                <div class="containerFunc">
+                    <div class="funcionario">
+                        <div class="foto">
+                            <img src="upload/funcionarios/<?= $funcionarios["imagem"] ?>">
+                        </div>
+                        <div class="nome">
+                            <span><?= $funcionarios["nome"] ?></span>
+                        </div>
+                    </div>
+                    <div class="contatos">
+                        <a href="#">
+                            <img src="img/instagramLogo copy.svg">
+                        </a>
+                        <a href="#">
+                            <img src="img/xLogo.svg">
+                        </a>
+                        <a href="#">
+                            <img src="img/facebookLogo copy.svg">
+                        </a>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+
+            <!-- <div class="containerFunc">
                 <div class="funcionario">
                     <div class="foto">
                         <img src="img/funcionario1.jpeg">
@@ -270,7 +295,7 @@
                         <img src="img/facebookLogo copy.svg">
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 

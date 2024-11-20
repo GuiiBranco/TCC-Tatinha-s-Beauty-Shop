@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\EventoModel;
+use App\Models\FuncionariosModel;
 use App\Models\PortfolioModel;
 
 class Home extends BaseController
@@ -13,12 +14,15 @@ class Home extends BaseController
 
         $portfolioModel = new PortfolioModel();
         $eventoModel = new EventoModel();
+        $funcionariosModel = new FuncionariosModel();
 
         $itensPortfolio = $portfolioModel->findAll();
         $itensEvento = $eventoModel->findAll();
+        $itensFuncionarios = $funcionariosModel->findAll();
 
         $dados["imagensPortfolio"] = $itensPortfolio;
         $dados["imagensEvento"] = $itensEvento;
+        $dados["imagensFuncionarios"] = $itensFuncionarios;
 
         return view('index', $dados);
     }
