@@ -14,12 +14,17 @@ $routes->get('/login', 'AdminController::index');
 $routes->post('/logar', 'AdminController::logar');
 $routes->get('/editSecoes', 'AdminController::menu');
 
-// Controllers para cadastro "Portfolio"
+// Controller para cadastro "Portfolio"
 $routes->get('/portfolio', 'PortfolioController::index');
 $routes->post('/cadPortfolio', 'PortfolioController::adicionarImagem');
 $routes->get('/deletar/(:num)', 'PortfolioController::deletarImagem/$1');
 
-// Controllers para cadastro "Eventos"
+// Controller para cadastro "Eventos"
 $routes->get('/evento', 'EventoController::index');
 $routes->post('/cadEvento', 'EventoController::adicionarImagem');
 $routes->get('/deletarEvento/(:num)', 'EventoController::deletarImagem/$1');
+
+// Controller para cadastro de "Funcionários"
+$routes->get('/funcionarios', 'FuncionariosController::index');
+$routes->post('/cadFuncionarios', 'FuncionariosController::adicionarImagem');
+$routes->get('/deletarFuncionario/(:num)', 'FuncionariosController::deletarImagem/$1');

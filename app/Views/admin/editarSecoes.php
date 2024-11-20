@@ -15,7 +15,7 @@
         <a href="/evento" class="link">
             <span>Seção de Eventos</span>
         </a>
-        <a href="#" class="link">
+        <a href="/funcionarios" class="link">
             <span>Seção de Funcionários</span>
         </a>
     </main>
