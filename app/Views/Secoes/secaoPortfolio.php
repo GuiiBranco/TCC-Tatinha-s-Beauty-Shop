@@ -84,8 +84,8 @@
         
         <?php foreach($imagens as $imagem): ?>
             <div class="item">
-                <img src="upload/portfolio/<?= $imagem["imagem"] ?>" class="imagemLista">
-                <a href="/deletar/<?= $imagem["idPortfolio"] ?>">🗑️</a>
+                <img src="/upload/portfolio/<?= $imagem["imagem"] ?>" class="imagemLista">
+                <a href="editSecoes/deletar/<?= $imagem["idPortfolio"] ?>">🗑️</a>
             </div>
         <?php endforeach; ?>
 

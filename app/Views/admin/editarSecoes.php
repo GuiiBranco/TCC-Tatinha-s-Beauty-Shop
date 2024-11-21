@@ -9,13 +9,13 @@
 </head>
 <body>
     <main>
-        <a href="/portfolio" class="link">
+        <a href="editSecoes/portfolio" class="link">
             <span>Seção do Portfólio</span>
         </a>
-        <a href="/evento" class="link">
+        <a href="editSecoes/evento" class="link">
             <span>Seção de Eventos</span>
         </a>
-        <a href="/funcionarios" class="link">
+        <a href="editSecoes/funcionarios" class="link">
             <span>Seção de Funcionários</span>
         </a>
     </main>
