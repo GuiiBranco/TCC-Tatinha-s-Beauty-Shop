@@ -31,7 +31,7 @@ class EventoController extends BaseController
         $eventoModel->save($dados);
 
         $imagem->move("upload/evento", $nomeAleatorio);
-        return redirect()->to(base_url("/evento"));
+        return redirect()->to(base_url("editSecoes/evento"));
     }
 
     public function deletarImagem($id)
@@ -46,6 +46,6 @@ class EventoController extends BaseController
 
         $eventoModel->where('idEventos', $id)->delete();
 
-        return redirect()->to(base_url("/evento"));
+        return redirect()->to(base_url("editSecoes/evento"));
     }
 }

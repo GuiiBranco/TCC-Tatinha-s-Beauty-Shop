@@ -22,12 +22,14 @@ $routes->group("editSecoes", function($routes){
     $routes->post('cadPortfolio', 'PortfolioController::adicionarImagem');
     $routes->get('deletar/(:num)', 'PortfolioController::deletarImagem/$1');
 
+    // Controller para cadastro "Eventos"
+    $routes->get('evento', 'EventoController::index');
+    $routes->post('cadEvento', 'EventoController::adicionarImagem');
+    $routes->get('deletarEvento/(:num)', 'EventoController::deletarImagem/$1');
+
 });
 
-// Controller para cadastro "Eventos"
-$routes->get('/evento', 'EventoController::index');
-$routes->post('/cadEvento', 'EventoController::adicionarImagem');
-$routes->get('/deletarEvento/(:num)', 'EventoController::deletarImagem/$1');
+
 
 // Controller para cadastro de "Funcionários"
 $routes->get('/funcionarios', 'FuncionariosController::index');
