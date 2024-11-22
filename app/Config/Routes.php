@@ -12,12 +12,17 @@ $routes->get('/', 'Home::index');
 // Tela de login
 $routes->get('/login', 'AdminController::index');
 $routes->post('/logar', 'AdminController::logar');
-$routes->get('/editSecoes', 'AdminController::menu');
 
-// Controller para cadastro "Portfolio"
-$routes->get('/portfolio', 'PortfolioController::index');
-$routes->post('/cadPortfolio', 'PortfolioController::adicionarImagem');
-$routes->get('/deletar/(:num)', 'PortfolioController::deletarImagem/$1');
+$routes->group("editSecoes", function($routes){
+
+    $routes->get('', 'AdminController::menu');
+
+    // Controller para cadastro "Portfolio"
+    $routes->get('portfolio', 'PortfolioController::index');
+    $routes->post('cadPortfolio', 'PortfolioController::adicionarImagem');
+    $routes->get('deletar/(:num)', 'PortfolioController::deletarImagem/$1');
+
+});
 
 // Controller para cadastro "Eventos"
 $routes->get('/evento', 'EventoController::index');

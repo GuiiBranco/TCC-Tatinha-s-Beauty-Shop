@@ -31,7 +31,7 @@ class PortfolioController extends BaseController
         $portfolioModel->save($dados);
 
         $imagem->move("upload/portfolio", $nomeAleatorio);
-        return redirect()->to(base_url("/portfolio"));
+        return redirect()->to(base_url("editSecoes/portfolio"));
     }
 
     public function deletarImagem($id)
@@ -46,6 +46,6 @@ class PortfolioController extends BaseController
 
         $portfolioModel->where('idPortfolio', $id)->delete();
 
-        return redirect()->to(base_url("/portfolio"));
+        return redirect()->to(base_url("editSecoes/portfolio"));
     }
 }
