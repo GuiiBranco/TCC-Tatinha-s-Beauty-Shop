@@ -10,6 +10,7 @@ class AdminController extends BaseController
 {
     public function index()
     {
+        session()->start();
         return view("admin/login");
     }
 

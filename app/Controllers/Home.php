@@ -10,6 +10,7 @@ class Home extends BaseController
 {
     public function index(): string
     {
+
         $dados = array();
 
         $portfolioModel = new PortfolioModel();

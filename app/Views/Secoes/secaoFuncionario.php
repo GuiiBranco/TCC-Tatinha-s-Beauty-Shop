@@ -73,7 +73,7 @@
 </head>
 <body>
     <section class="inserirImagens">
-        <form action="/cadFuncionarios" method="post" enctype="multipart/form-data" class="contornoInterno">
+        <form action="/editSecoes/cadFuncionarios" method="post" enctype="multipart/form-data" class="contornoInterno">
             <label for="imagem">Adicionar nova imagem:</label>
             <input type="file" name="imagem" class="imagem">
             <label for="nome">Nome do funcionário:</label>
@@ -86,8 +86,8 @@
         
         <?php foreach($imagens as $imagem): ?>
             <div class="item">
-                <img src="upload/funcionarios/<?= $imagem["imagem"] ?>" class="imagemLista">
-                <a href="/deletarFuncionario/<?= $imagem["idFuncionario"] ?>">🗑️</a>
+                <img src="/upload/funcionarios/<?= $imagem["imagem"] ?>" class="imagemLista">
+                <a href="/editSecoes/deletarFuncionario/<?= $imagem["idFuncionario"] ?>">🗑️</a>
             </div>
         <?php endforeach; ?>
 

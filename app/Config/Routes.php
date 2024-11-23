@@ -13,9 +13,9 @@ $routes->get('/', 'Home::index');
 $routes->get('/login', 'AdminController::index');
 $routes->post('/logar', 'AdminController::logar');
 
-$routes->group("editSecoes", function($routes){
+$routes->group("editSecoes", ['filter' => 'autenticacao'], function($routes){
 
-    $routes->get('', 'AdminController::menu');
+    $routes->get('/', 'AdminController::menu');
 
     // Controller para cadastro "Portfolio"
     $routes->get('portfolio', 'PortfolioController::index');
@@ -27,11 +27,9 @@ $routes->group("editSecoes", function($routes){
     $routes->post('cadEvento', 'EventoController::adicionarImagem');
     $routes->get('deletarEvento/(:num)', 'EventoController::deletarImagem/$1');
 
+    // Controller para cadastro de "Funcionários"
+    $routes->get('funcionarios', 'FuncionariosController::index');
+    $routes->post('cadFuncionarios', 'FuncionariosController::adicionarImagem');
+    $routes->get('deletarFuncionario/(:num)', 'FuncionariosController::deletarImagem/$1');
+
 });
-
-
-
-// Controller para cadastro de "Funcionários"
-$routes->get('/funcionarios', 'FuncionariosController::index');
-$routes->post('/cadFuncionarios', 'FuncionariosController::adicionarImagem');
-$routes->get('/deletarFuncionario/(:num)', 'FuncionariosController::deletarImagem/$1');

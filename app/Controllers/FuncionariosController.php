@@ -31,7 +31,7 @@ class FuncionariosController extends BaseController
         $funcionarioModel->save($dados);
 
         $imagem->move("upload/funcionarios", $nomeAleatorio);
-        return redirect()->to(base_url("/funcionarios"));
+        return redirect()->to(base_url("editSecoes/funcionarios"));
     }
 
     public function deletarImagem($id)
@@ -46,7 +46,7 @@ class FuncionariosController extends BaseController
 
         $funcionarioModel->where('idFuncionario', $id)->delete();
 
-        return redirect()->to(base_url("/funcionarios"));
+        return redirect()->to(base_url("editSecoes/funcionarios"));
     }
 
 }
