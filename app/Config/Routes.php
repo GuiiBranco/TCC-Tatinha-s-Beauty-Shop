@@ -34,4 +34,9 @@ $routes->group("editSecoes", ['filter' => 'autenticacao'], function($routes){
     $routes->post('cadFuncionarios', 'FuncionariosController::adicionarImagem');
     $routes->get('deletarFuncionario/(:num)', 'FuncionariosController::deletarImagem/$1');
 
+    // Controller para editar informações dos funcionários
+    $routes->get('funcionarios/editFuncionario/(:num)', 'EditFuncionariosController::index/$1');
+    $routes->post('funcionarios/editFuncionario/editNome', 'EditFuncionariosController::editNome');
+    $routes->post('funcionarios/editFuncionario/editFoto', 'EditFuncionariosController::editFoto');
+
 });

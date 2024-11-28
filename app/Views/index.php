@@ -217,7 +217,7 @@
         <img src="img/Logo.svg" id="logo">
     </section> -->
 
-    <!-- <a href="" class="whatsappFlutuante">
+    <a href="https://wa.me/5515991902414" class="whatsappFlutuante">
         <img src="img/iconeWhatsapp.svg">
-    </a> -->
+    </a>
 </body>

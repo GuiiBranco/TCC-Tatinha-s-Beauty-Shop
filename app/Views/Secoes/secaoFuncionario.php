@@ -87,7 +87,10 @@
         <?php foreach($imagens as $imagem): ?>
             <div class="item">
                 <img src="/upload/funcionarios/<?= $imagem["imagem"] ?>" class="imagemLista">
-                <a href="/editSecoes/deletarFuncionario/<?= $imagem["idFuncionario"] ?>">🗑️</a>
+                <div>
+                    <a href="/editSecoes/deletarFuncionario/<?= $imagem["idFuncionario"] ?>">🗑️</a>
+                    <a href="/editSecoes/funcionarios/editFuncionario/<?= $imagem["idFuncionario"] ?>">✏️</a>
+                </div>
             </div>
         <?php endforeach; ?>
 
