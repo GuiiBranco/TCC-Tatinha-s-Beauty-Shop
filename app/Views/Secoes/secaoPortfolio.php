@@ -74,6 +74,11 @@
 <body>
     <section class="inserirImagens">
         <form action="/editSecoes/cadPortfolio" method="post" enctype="multipart/form-data" class="contornoInterno">
+            
+            <?php if (session()->has("aviso")): ?>
+                <p class="aviso"><?= session("aviso") ?></p>
+            <?php endif; ?>
+
             <label for="imagem">Adicionar nova imagem:</label>
             <input type="file" name="imagem" class="imagem">
             <button type="submit">Salvar Imagem</button>

@@ -25,7 +25,7 @@ class AutenticacaoFiltro implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-        if(!session()->has("idUsuario" && "nome")){
+        if(!session()->has("idUsuario")){
             return redirect()->to(base_url("/login"));
         }
     }

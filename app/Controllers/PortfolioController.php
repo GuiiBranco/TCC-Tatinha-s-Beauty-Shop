@@ -16,22 +16,35 @@ class PortfolioController extends BaseController
 
         $dados["imagens"] = $itens;
 
+        if (count($itens) < 8) {
+            session()->setFlashdata("aviso", "A sessão de portfólio deve conter 8 imagens.");
+            return view("secoes/secaoPortfolio", $dados);
+        }
+
         return view("secoes/secaoPortfolio", $dados);
     }
 
     public function adicionarImagem()
     {
-        $dados = $this->request->getPost();
-        $imagem = $this->request->getFile("imagem");
-
-        $nomeAleatorio = $imagem->getRandomName();
-        $dados["imagem"] = $nomeAleatorio;
-
         $portfolioModel = new PortfolioModel();
-        $portfolioModel->save($dados);
+        $itens = $portfolioModel->findAll();
 
-        $imagem->move("upload/portfolio", $nomeAleatorio);
-        return redirect()->to(base_url("editSecoes/portfolio"));
+        if (count($itens) < 8) {
+            $dados = $this->request->getPost();
+            $imagem = $this->request->getFile("imagem");
+    
+            $nomeAleatorio = $imagem->getRandomName();
+            $dados["imagem"] = $nomeAleatorio;
+    
+            $portfolioModel->save($dados);
+    
+            $imagem->move("upload/portfolio", $nomeAleatorio);
+            return redirect()->to(base_url("editSecoes/portfolio"));
+        } else {
+            session()->setFlashdata("aviso", "A sessão de portfólio deve conter 8 imagens.");
+            return redirect()->to(base_url("editSecoes/portfolio"));
+        }
+
     }
 
     public function deletarImagem($id)

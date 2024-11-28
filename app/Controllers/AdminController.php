@@ -37,6 +37,11 @@ class AdminController extends BaseController
         return redirect()->to(base_url("/editSecoes"));
     }
 
+    public function logout(){
+        session()->destroy();
+        return redirect()->to(base_url("/"));
+    }
+
     public function menu()
     {
         return view("admin/editarSecoes");

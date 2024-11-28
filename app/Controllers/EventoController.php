@@ -21,17 +21,26 @@ class EventoController extends BaseController
 
     public function adicionarImagem()
     {
-        $dados = $this->request->getPost();
-        $imagem = $this->request->getFile("imagem");
-
-        $nomeAleatorio = $imagem->getRandomName();
-        $dados["imagem"] = $nomeAleatorio;
-
         $eventoModel = new EventoModel();
-        $eventoModel->save($dados);
+        $itens = $eventoModel->findAll();
 
-        $imagem->move("upload/evento", $nomeAleatorio);
-        return redirect()->to(base_url("editSecoes/evento"));
+        if (count($itens) < 1) {
+            $dados = $this->request->getPost();
+            $imagem = $this->request->getFile("imagem");
+    
+            $nomeAleatorio = $imagem->getRandomName();
+            $dados["imagem"] = $nomeAleatorio;
+    
+            $eventoModel->save($dados);
+    
+            $imagem->move("upload/evento", $nomeAleatorio);
+            return redirect()->to(base_url("editSecoes/evento"));
+        } else {
+            session()->setFlashdata("aviso", "A sessão de eventos deve conte no máximo 1 imagem.");
+            return redirect()->to(base_url("editSecoes/evento"));
+        }
+
+
     }
 
     public function deletarImagem($id)

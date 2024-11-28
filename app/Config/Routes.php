@@ -12,6 +12,8 @@ $routes->get('/', 'Home::index');
 // Tela de login
 $routes->get('/login', 'AdminController::index');
 $routes->post('/logar', 'AdminController::logar');
+$routes->get('/logout', 'AdminController::logout');
+
 
 $routes->group("editSecoes", ['filter' => 'autenticacao'], function($routes){
 

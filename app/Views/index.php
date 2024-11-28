@@ -105,9 +105,11 @@
         </div>
     </section>
 
-    <section id="anuncios">
-        <img src="upload/evento/<?php echo $imagensEvento[0]["imagem"] ?>">
-    </section>
+    <?php if($imagensEvento[0]["imagem"]): ?>
+        <section id="anuncios">
+            <img src="upload/evento/<?php echo $imagensEvento[0]["imagem"] ?>">
+        </section>
+    <?php endif; ?>
 
     <section id="fotosSalao">
         <div class="divImgSalao">
@@ -130,174 +132,38 @@
         </div>
     </section>
 
-    <!-- <section id="instagram">
-        <div class="containerInst">
-            <div class="conInsUm">
-                <img class="fotoUsuario" src="https://static.vecteezy.com/system/resources/thumbnails/036/594/092/small_2x/man-empty-avatar-photo-placeholder-for-social-networks-resumes-forums-and-dating-sites-male-and-female-no-photo-images-for-unfilled-user-profile-free-vector.jpg">
-            </div>
-            <div class="conInsDois">
-                <div class="infoInstUm">
-                    <span class="infoNome">Tatinha´s_Beauty_Shop</span>
-                    <span class="infoBtn">seguir</span>
-                    <span class="infoBtn">enviar mensagem</span>
-                </div>
-                <div class="infoInstDois">
-                    <span>288 publicações</span>
-                    <span>1.400 seguidores</span>
-                    <span>9 seguindo</span>
-                </div>
-            </div>
-        </div>
-        <div id="feed">
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-            <div class="post"></div>
-        </div>
-    </section> -->
-
-    <section id="secFuncionarios">
-        <span id="tituloFuncionarios">
-            NOSSAS ESTRELAS
-        </span>
-        <div id="divFuncionarios">
-
-            <?php foreach ($imagensFuncionarios as $funcionarios): ?>
-                <div class="containerFunc">
-                    <div class="funcionario">
-                        <div class="foto">
-                            <img src="upload/funcionarios/<?= $funcionarios["imagem"] ?>">
+    <?php if($imagensFuncionarios > 0): ?>
+        <section id="secFuncionarios">
+            <span id="tituloFuncionarios">
+                NOSSAS ESTRELAS
+            </span>
+            <div id="divFuncionarios">
+                <?php foreach ($imagensFuncionarios as $funcionarios): ?>
+                    <div class="containerFunc">
+                        <div class="funcionario">
+                            <div class="foto">
+                                <img src="upload/funcionarios/<?= $funcionarios["imagem"] ?>">
+                            </div>
+                            <div class="nome">
+                                <span><?= $funcionarios["nome"] ?></span>
+                            </div>
                         </div>
-                        <div class="nome">
-                            <span><?= $funcionarios["nome"] ?></span>
-                        </div>
+                        <!-- <div class="contatos">
+                            <a href="#">
+                                <img src="img/instagramLogo copy.svg">
+                            </a>
+                            <a href="#">
+                                <img src="img/xLogo.svg">
+                            </a>
+                            <a href="#">
+                                <img src="img/facebookLogo copy.svg">
+                            </a>
+                        </div> -->
                     </div>
-                    <div class="contatos">
-                        <a href="#">
-                            <img src="img/instagramLogo copy.svg">
-                        </a>
-                        <a href="#">
-                            <img src="img/xLogo.svg">
-                        </a>
-                        <a href="#">
-                            <img src="img/facebookLogo copy.svg">
-                        </a>
-                    </div>
-                </div>
-            <?php endforeach; ?>
-
-            <!-- <div class="containerFunc">
-                <div class="funcionario">
-                    <div class="foto">
-                        <img src="img/funcionario1.jpeg">
-                    </div>
-                    <div class="nome">
-                        <span>Juliana Vieira</span>
-                    </div>
-                </div>
-                <div class="contatos">
-                    <a href="#">
-                        <img src="img/instagramLogo copy.svg">
-                    </a>
-                    <a href="#">
-                        <img src="img/xLogo.svg">
-                    </a>
-                    <a href="#">
-                        <img src="img/facebookLogo copy.svg">
-                    </a>
-                </div>
+                <?php endforeach; ?>
             </div>
-            <div class="containerFunc">
-                <div class="funcionario">
-                    <div class="foto">
-                        <img src="img/funcionario2.jpeg">
-                    </div>
-                    <div class="nome">
-                        <span>Pamela Moraes</span>
-                    </div>
-                </div>
-                <div class="contatos">
-                    <a href="#">
-                        <img src="img/instagramLogo copy.svg">
-                    </a>
-                    <a href="#">
-                        <img src="img/xLogo.svg">
-                    </a>
-                    <a href="#">
-                        <img src="img/facebookLogo copy.svg">
-                    </a>
-                </div>
-            </div>
-            <div class="containerFunc">
-                <div class="funcionario">
-                    <div class="foto">
-                        <img src="img/funcionario3.jpeg">
-                    </div>
-                    <div class="nome">
-                        <span>Leandra Mendes</span>
-                    </div>
-                </div>
-                <div class="contatos">
-                    <a href="#">
-                        <img src="img/instagramLogo copy.svg">
-                    </a>
-                    <a href="#">
-                        <img src="img/xLogo.svg">
-                    </a>
-                    <a href="#">
-                        <img src="img/facebookLogo copy.svg">
-                    </a>
-                </div>
-            </div>
-            <div class="containerFunc">
-                <div class="funcionario">
-                    <div class="foto">
-                        <img src="img/funcionario4.jpg">
-                    </div>
-                    <div class="nome">
-                        <span>Rebeca Vieira</span>
-                    </div>
-                </div>
-                <div class="contatos">
-                    <a href="#">
-                        <img src="img/instagramLogo copy.svg">
-                    </a>
-                    <a href="#">
-                        <img src="img/xLogo.svg">
-                    </a>
-                    <a href="#">
-                        <img src="img/facebookLogo copy.svg">
-                    </a>
-                </div>
-            </div>
-            <div class="containerFunc">
-                <div class="funcionario">
-                    <div class="foto">
-                        <img src="img/funcionario5.jpg">
-                    </div>
-                    <div class="nome">
-                        <span>Maria Clara</span>
-                    </div>
-                </div>
-                <div class="contatos">
-                    <a href="#">
-                        <img src="img/instagramLogo copy.svg">
-                    </a>
-                    <a href="#">
-                        <img src="img/xLogo.svg">
-                    </a>
-                    <a href="#">
-                        <img src="img/facebookLogo copy.svg">
-                    </a>
-                </div>
-            </div> -->
-        </div>
-    </section>
+        </section>
+    <?php endif; ?>
 
     <section id="infoSalao">
         <div id="info">
@@ -305,14 +171,14 @@
                 <h2>Endereço</h2>
                 <span>
                     Rua Benedito Carlos Dias</br>
-                    Número 26 Central Parque
+                    Número 27 central parque
                 </span>
             </div>
             <div>
                 <h2>Telefone / E-mail</h2>
                 <span>
                     E-mail: tatinhaBeauty@gmail.com</br>
-                    Cel: (15)99999-9999
+                    Cel: 32029021
                 </span>
             </div>
             <div>
@@ -329,7 +195,7 @@
         height="70%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
-    <section id="contato">
+    <!-- <section id="contato">
         <div id="faleConoscoDiv">
             <span id="faleConosco">FALE CONOSCO</span>
             <div id="nomeEmail">
@@ -349,9 +215,9 @@
             <textarea name="#" id="areaTexto" rows="10" placeholder="Mensagem:"></textarea>
         </div>
         <img src="img/Logo.svg" id="logo">
-    </section>
+    </section> -->
 
-    <a href="#" class="whatsappFlutuante">
+    <!-- <a href="" class="whatsappFlutuante">
         <img src="img/iconeWhatsapp.svg">
-    </a>
+    </a> -->
 </body>

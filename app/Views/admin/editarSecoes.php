@@ -19,5 +19,6 @@
             <span>Seção de Funcionários</span>
         </a>
     </main>
+    <a href="/logout" class="logout">Logout</a>
 </body>
 </html>

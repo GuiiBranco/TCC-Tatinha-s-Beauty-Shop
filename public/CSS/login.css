@@ -7,18 +7,41 @@
 body{
     display: flex;
     height: 100vh;
+    color: white;
+    background-color: #202426;
+    font-family: 'Inter';
 }
 
 form{
-    border: solid black;
-    height: 30rem;
-    width: 25rem;
-    padding: 3rem;
+    margin: auto;
+    height: 100%;
+    width: 30rem;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
-.email, .senha{
-    margin-bottom: 3rem;
+.input{
+    border-bottom: solid #F27781;
+    width: 15rem;
+}
+
+.input input{
+    width: 100%;
+    background-color: #202426;
+    border: none;
+    color: white;
+}
+
+button{
+    color: white;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #F27781;
+    cursor: pointer;
 }
