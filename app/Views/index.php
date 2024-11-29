@@ -148,17 +148,23 @@
                                 <span><?= $funcionarios["nome"] ?></span>
                             </div>
                         </div>
-                        <!-- <div class="contatos">
-                            <a href="#">
-                                <img src="img/instagramLogo copy.svg">
-                            </a>
-                            <a href="#">
-                                <img src="img/xLogo.svg">
-                            </a>
-                            <a href="#">
-                                <img src="img/facebookLogo copy.svg">
-                            </a>
-                        </div> -->
+                        <div class="contatos">
+                            <?php if($funcionarios["instagram"]): ?>
+                                <a href="<?= $funcionarios["instagram"] ?>" target="_blank">
+                                    <img src="img/logoInstagram.svg">
+                                </a>
+                            <?php endif; ?>
+                            <?php if($funcionarios["x"]): ?>
+                                <a href="<?= $funcionarios["x"] ?>" target="_blank">
+                                    <img src="img/logoX.svg">
+                                </a>
+                            <?php endif; ?>
+                            <?php if($funcionarios["tiktok"]): ?>
+                                <a href="<?= $funcionarios["tiktok"] ?>" target="_blank">
+                                    <img src="img/logoTiktok.svg">
+                                </a>
+                            <?php endif; ?>
+                        </div>
                     </div>
                 <?php endforeach; ?>
             </div>
