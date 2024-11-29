@@ -86,8 +86,15 @@
                 <button>Salvar</button>
             </form>
             <form action="#" method="post" class="editInfo">
-                <label for="rede">Adicionar Rede Social:</label>
-                <input type="text" name="rede" class="rede">
+                <label for="nome">Adicionar Rede Social:</label>
+                <select name="nomeRede">
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="x">X(Twitter)</option>
+                    <option value="tiktok">TikTok</option>
+                    <option value="threads">Threads</option>
+                </select>
+                <input type="text" name="linkRede" class="linkRede">
             </form>
         </div>
         <div class="deletarRedes"></div>

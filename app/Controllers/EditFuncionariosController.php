@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\FuncionariosModel;
+use App\Models\RedesModel;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class EditFuncionariosController extends BaseController
@@ -48,7 +49,8 @@ class EditFuncionariosController extends BaseController
 
     public function addRede()
     {
-        //
+        $redesModel = new RedesModel();
+        $dados = $this->request->getPost();
     }
 
     public function apagarRede()
