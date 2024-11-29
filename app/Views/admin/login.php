@@ -14,11 +14,11 @@
 
         <div class="input">
             <label for="email">E-mail</label>
-            <input type="text" name="email" class="email">
+            <input type="text" name="email" class="email" autocomplete="off">
         </div>
         <div class="input">
             <label for="senha">Senha</label>
-            <input type="password" name="senha" class="senha" required>
+            <input type="password" name="senha" class="senha" required autocomplete="off">
         </div>
         <button type="submit">Login</button>
     </form>

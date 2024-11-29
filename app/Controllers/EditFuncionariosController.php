@@ -47,14 +47,30 @@ class EditFuncionariosController extends BaseController
         return redirect()->to(base_url("/editSecoes/funcionarios/editFuncionario/".$dados["idFuncionario"]));
     }
 
-    public function addRede()
+    public function editInstagram()
     {
-        $redesModel = new RedesModel();
-        $dados = $this->request->getPost();
+        $funcionario = new FuncionariosModel();
+        $dados["id"] = $this->request->getPost("idFuncionario");
+        $dados["instagram"] = $this->request->getPost("instagram");
+        $funcionario->where("idFuncionario", $dados["id"])->set("instagram", $dados["instagram"])->update();
+        return redirect()->to(base_url("/editSecoes/funcionarios/editFuncionario/".$dados["id"]));
     }
 
-    public function apagarRede()
+    public function editX()
     {
-        //
+        $funcionario = new FuncionariosModel();
+        $dados["id"] = $this->request->getPost("idFuncionario");
+        $dados["x"] = $this->request->getPost("x");
+        $funcionario->where("idFuncionario", $dados["id"])->set("x", $dados["x"])->update();
+        return redirect()->to(base_url("/editSecoes/funcionarios/editFuncionario/".$dados["id"]));
+    }
+
+    public function editTiktok()
+    {
+        $funcionario = new FuncionariosModel();
+        $dados["id"] = $this->request->getPost("idFuncionario");
+        $dados["tiktok"] = $this->request->getPost("tiktok");
+        $funcionario->where("idFuncionario", $dados["id"])->set("tiktok", $dados["tiktok"])->update();
+        return redirect()->to(base_url("/editSecoes/funcionarios/editFuncionario/".$dados["id"]));
     }
 }

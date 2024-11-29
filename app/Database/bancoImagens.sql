@@ -17,15 +17,9 @@ CREATE TABLE funcionarios(
     idFuncionario INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(30) NOT NULL,
     imagem VARCHAR(50) NOT NULL UNIQUE,
-    idRede INT NULL
-)Engine=InnoDB;
-
-ALTER TABLE funcionarios ADD FOREIGN KEY (idRede) REFERENCES redesSociais(idRede);
-
-CREATE TABLE redesSociais(
-    idRede INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(20) NOT NULL,
-    link VARCHAR(50) NOT NULL
+    instagram VARCHAR(40) NULL,
+    x VARCHAR(40) NULL,
+    tiktok VARCHAR(40) NULL
 )Engine=InnoDB;
 
 CREATE TABLE admin(

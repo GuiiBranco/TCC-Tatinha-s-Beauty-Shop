@@ -29,6 +29,11 @@ form{
     width: 15rem;
 }
 
+input:focus {
+    outline: none;
+    border: none;
+}
+
 .input input{
     width: 100%;
     background-color: #202426;

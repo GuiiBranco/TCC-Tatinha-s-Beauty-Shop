@@ -3,72 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/secoes.css">
     <title>Editar Seção de Portfólio</title>
-
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        body{
-            background-color: #202426;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .inserirImagens{
-            width: 100%;
-            min-height: 10rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contornoInterno{
-            border: solid #D95B66;
-            border-radius: 1rem;
-            width: 90%;
-            height: 90%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .listagemImagens{
-            padding-top: 1rem;
-            width: 70%;
-            min-height: 2rem;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .item{
-            border: solid #D95B66;
-            border-radius: 0.5rem;
-            width: 10rem;
-            height: 14rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-
-        .imagemLista{
-            background-color: white;
-            width: 8rem;
-            height: 10rem;
-        }
-
-        a{
-            text-decoration: none;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jacques+Francois&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 </head>
 <body>
@@ -95,5 +33,9 @@
         <?php endforeach; ?>
 
     </div>
+
+    <a href="/editSecoes" class="backArrow">
+        <img src="/img/backArrow.png">
+    </a>
 </body>
 </html>

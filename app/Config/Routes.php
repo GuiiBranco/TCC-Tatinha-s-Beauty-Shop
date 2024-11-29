@@ -38,5 +38,8 @@ $routes->group("editSecoes", ['filter' => 'autenticacao'], function($routes){
     $routes->get('funcionarios/editFuncionario/(:num)', 'EditFuncionariosController::index/$1');
     $routes->post('funcionarios/editFuncionario/editNome', 'EditFuncionariosController::editNome');
     $routes->post('funcionarios/editFuncionario/editFoto', 'EditFuncionariosController::editFoto');
+    $routes->post('funcionarios/editFuncionario/editInstagram', 'EditFuncionariosController::editInstagram');
+    $routes->post('funcionarios/editFuncionario/editX', 'EditFuncionariosController::editX');
+    $routes->post('funcionarios/editFuncionario/editTiktok', 'EditFuncionariosController::editTiktok');
 
 });
