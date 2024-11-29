@@ -30,6 +30,9 @@
             <a href="#infoSalao">Contatos</a>
             <a href="#secFuncionarios">Nossas estrelas</a>
         </div>
+        <div>
+            <img src="img/logo.svg" class="logo">
+        </div>
     </section>
 
     <section id="slideshow">
@@ -201,27 +204,9 @@
         height="70%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
-    <!-- <section id="contato">
-        <div id="faleConoscoDiv">
-            <span id="faleConosco">FALE CONOSCO</span>
-            <div id="nomeEmail">
-                <div class="nomeInput">
-                    <span>Nome:</span>
-                    <input type="text" maxlength="50">
-                </div>
-                <div class="email">
-                    <span>E-mail:</span>
-                    <input type="text" maxlength="50">
-                </div>
-            </div>
-            <div class="assuntoInput">
-                <span>Assunto:</span>
-                <input type="text" maxlength="50">
-            </div>
-            <textarea name="#" id="areaTexto" rows="10" placeholder="Mensagem:"></textarea>
-        </div>
-        <img src="img/Logo.svg" id="logo">
-    </section> -->
+    <section id="footer">
+        Site feito por: Guilherme Branco Rodrigues e João Henrique de Oliveira Benitz.
+    </section>
 
     <a href="https://wa.me/5515991902414" class="whatsappFlutuante">
         <img src="img/iconeWhatsapp.svg">

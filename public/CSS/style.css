@@ -464,88 +464,14 @@ body{
 /* Fim Informações do Salão */
 
 /* Fale Conosco */
-#contato{
-    background-color: #151515;
+#footer{
+    background-color: #141414;
+    color: white;
     width: 100%;
-    height: 45rem;
+    height: 10rem;
     display: flex;
-    flex-direction: column;
-    font-family: 'Inter';
-}
-
-#faleConosco{
-    color: #F3AF00;
-    font-size: 2.5rem;
-}
-
-#faleConoscoDiv{
-    margin: auto;
-    width: 58%;
-    min-width: 35rem;
-    height: 100%;
-    padding-top: 2rem;
-}
-
-#nomeEmail{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
-}
-
-.nomeInput, .email{
-    background-color: white;
-    width: 49.5%;
-    height: 2.5rem;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-left: 1rem;
-    border-radius: 2rem;
-}
-
-.nomeInput input, .email input{
-    height: 2.5rem;
-    width: 85%;
-    border-radius: 2rem;
-    border-style: none;
-    outline: none;
-}
-
-.assuntoInput{
-    background-color: white;
-    width: 100%;
-    height: 2.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 1rem;
-    border-radius: 2rem;
-    margin-top: 2rem;
-}
-
-.assuntoInput input{
-    height: 2.5rem;
-    width: 92%;
-    border-radius: 2rem;
-    border-style: none;
-    outline: none;
-}
-
-#areaTexto{
-    margin-top: 2rem;
-    border-radius: 1rem;
-    padding: 1rem;
-    width: 100%;
-    border-style: none;
-    outline: none;
-    resize: none;
-    font-family: 'Inter';
-}
-
-#logo{
-    height: 6rem;
-    margin-bottom: 3rem;
+    padding-left: 5rem;
 }
 /* Fim Fale Conosco */
 
@@ -613,4 +539,91 @@ body{
 #roupas{
 height: 25rem;
 }
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+
+@media (max-width: 770px) {
+    #header .linksHeader{
+        height: 5rem;
+    }
+
+    .logo{
+        height: 5rem;
+    }
+
+    #portfolio{
+        height: 21rem;
+    }
+    
+    .polaroid{
+        width: 91px;
+        height: 108px;
+    }
+    
+    .polaroidImg{
+        width: 80px;
+        height: 84px;
+    }
+    
+    .polaroid:hover{
+        width: 117px;
+        height: 144px;
+    }
+    
+    .polaroid:hover > .polaroidImg{
+        width: 100px;
+        height: 112px;
+    }
+    
+    #header .linksHeader a{
+        font-size: 13px;
+    }
+    
+    #diaDaNoiva{
+        height: 16rem;
+    }
+    
+    .btnLinkDiaNoiva{
+        padding: 0.25rem 1rem 0.25rem 1rem;
+        font-size: 12px;
+    }
+    
+    #fotosSalao{
+        height: 20rem;
+    }
+    
+    .pattern{
+        height: 20rem;
+    }
+    
+    #roupas{
+    height: 15rem;
+    }
+
+    #roupas .contorno2 div{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.562);
+        color: white;
+        font-family: "Inter", sans-serif;
+        width: 15rem;
+        left: 1.5rem;
+        bottom: 1.5rem;
+    }
+    
+    #roupas .contorno2 div h1{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    #roupas .contorno2 div h2{
+        font-size: 1.1rem;
+        font-weight: 200;
+    }
+
+    #header .linksHeader a{
+        font-size: 10px;
+    }
 }
