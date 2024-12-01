@@ -24,11 +24,15 @@
 <body>
     <section id="header">
         <div class="linksHeader">
-            <a href="#portfolio">Portfólio</a>
+            <?php if(count($imagensPortfolio) == 8): ?>
+                <a href="#portfolio">Portfólio</a>
+            <?php endif; ?>
             <a href="#diaDaNoiva">Dia da noiva</a>
             <a href="https://www.instagram.com/tatinhas_beauty_shop/" target="_blank">Instagram</a>
             <a href="#infoSalao">Contatos</a>
-            <a href="#secFuncionarios">Nossas estrelas</a>
+            <?php if(count($imagensFuncionarios) > 0): ?>
+                <a href="#secFuncionarios">Nossas estrelas</a>
+            <?php endif; ?>
         </div>
         <div>
             <img src="img/logo.svg" class="logo">
@@ -59,41 +63,43 @@
     </div>
     </section>
 
-    <section id="portfolio">-
-        <div id="contorno">
-            <div class="portDiv">
-                <div class="polaroid">
-                    <img src="upload/portfolio/<?php echo $imagensPortfolio[0]["imagem"] ?>" class="polaroidImg">
+    <?php if(count($imagensPortfolio) == 8): ?>
+        <section id="portfolio">
+            <div id="contorno">
+                <div class="portDiv">
+                    <div class="polaroid">
+                        <img src="upload/portfolio/<?php echo $imagensPortfolio[0]["imagem"] ?>" class="polaroidImg">
+                    </div>
+                    <div class="polaroid">
+                        <img src="upload/portfolio/<?php echo $imagensPortfolio[1]["imagem"] ?>" class="polaroidImg">
+                    </div>
+                    <div class="polaroid">
+                        <img src="upload/portfolio/<?php echo $imagensPortfolio[2]["imagem"] ?>" class="polaroidImg">
+                    </div>
+                    <div class="polaroid">
+                        <img src="upload/portfolio/<?php echo $imagensPortfolio[3]["imagem"] ?>" class="polaroidImg">
+                    </div>
                 </div>
-                <div class="polaroid">
-                    <img src="upload/portfolio/<?php echo $imagensPortfolio[1]["imagem"] ?>" class="polaroidImg">
+                <div class="portDiv">
+                    <div class="polaroid">
+                        <img src="upload/portfolio/<?php echo $imagensPortfolio[4]["imagem"] ?>" class="polaroidImg">
+                    </div>
+                    <div class="polaroid">
+                        <img src="upload/portfolio/<?php echo $imagensPortfolio[5]["imagem"] ?>" class="polaroidImg">
+                    </div>
+                    <div class="polaroid">
+                        <img src="upload/portfolio/<?php echo $imagensPortfolio[6]["imagem"] ?>" class="polaroidImg">
+                    </div>
+                    <div class="polaroid">
+                        <img src="upload/portfolio/<?php echo $imagensPortfolio[7]["imagem"] ?>" class="polaroidImg">
+                    </div>
                 </div>
-                <div class="polaroid">
-                    <img src="upload/portfolio/<?php echo $imagensPortfolio[2]["imagem"] ?>" class="polaroidImg">
-                </div>
-                <div class="polaroid">
-                    <img src="upload/portfolio/<?php echo $imagensPortfolio[3]["imagem"] ?>" class="polaroidImg">
-                </div>
+                <a href="https://www.instagram.com/tatinhas_beauty_shop/" target="_blank" id="instagramLink">
+                    <img src="img/logo_instagram.svg" id="instagram-icone">
+                </a>
             </div>
-            <div class="portDiv">
-                <div class="polaroid">
-                    <img src="upload/portfolio/<?php echo $imagensPortfolio[4]["imagem"] ?>" class="polaroidImg">
-                </div>
-                <div class="polaroid">
-                    <img src="upload/portfolio/<?php echo $imagensPortfolio[5]["imagem"] ?>" class="polaroidImg">
-                </div>
-                <div class="polaroid">
-                    <img src="upload/portfolio/<?php echo $imagensPortfolio[6]["imagem"] ?>" class="polaroidImg">
-                </div>
-                <div class="polaroid">
-                    <img src="upload/portfolio/<?php echo $imagensPortfolio[7]["imagem"] ?>" class="polaroidImg">
-                </div>
-            </div>
-            <a href="https://www.instagram.com/tatinhas_beauty_shop/" target="_blank" id="instagramLink">
-                <img src="img/logo_instagram.svg" id="instagram-icone">
-            </a>
-        </div>
-    </section>
+        </section>
+    <?php endif; ?>
 
     <section id="diaDaNoiva">
         <div class="divDiaNoiva">
@@ -135,7 +141,7 @@
         </div>
     </section>
 
-    <?php if($imagensFuncionarios > 0): ?>
+    <?php if(count($imagensFuncionarios) > 0): ?>
         <section id="secFuncionarios">
             <span id="tituloFuncionarios">
                 NOSSAS ESTRELAS

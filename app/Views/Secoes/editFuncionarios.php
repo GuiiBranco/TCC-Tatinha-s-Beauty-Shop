@@ -85,7 +85,7 @@
         }
 
         img{
-            width: 20rem;
+            width: 15rem;
         }
 
         .backArrow{
