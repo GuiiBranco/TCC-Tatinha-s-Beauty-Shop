@@ -20,6 +20,10 @@
             <label for="imagem">Adicionar nova imagem:</label>
             <input type="file" name="imagem" class="imagem">
             <button type="submit">Salvar Imagem</button>
+
+            <a href="/imagensPadrao/660x680.svg" download>
+                <img src="/img/baixarPadrão.png" class="baixarImg">
+            </a>
         </form>
     </section>
 
@@ -28,7 +32,9 @@
         <?php foreach($imagens as $imagem): ?>
             <div class="item">
                 <img src="/upload/portfolio/<?= $imagem["imagem"] ?>" class="imagemLista">
-                <a href="/editSecoes/deletar/<?= $imagem["idPortfolio"] ?>">🗑️</a>
+                <a href="/editSecoes/deletar/<?= $imagem["idPortfolio"] ?>">
+                    <img src="/img/lixeira.png" class="lixeira">
+                </a>
             </div>
         <?php endforeach; ?>
 

@@ -32,6 +32,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    position: relative;
 }
 
 .listagemImagens{
@@ -98,4 +99,15 @@ button{
 .btn{
     display: flex;
     gap: 0.5rem;
+}
+
+.baixarImg{
+    height: 1.5rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.lixeira, .editar{
+    height: 25px;
 }

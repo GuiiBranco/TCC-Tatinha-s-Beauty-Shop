@@ -42,4 +42,7 @@ $routes->group("editSecoes", ['filter' => 'autenticacao'], function($routes){
     $routes->post('funcionarios/editFuncionario/editX', 'EditFuncionariosController::editX');
     $routes->post('funcionarios/editFuncionario/editTiktok', 'EditFuncionariosController::editTiktok');
 
+    // Funções para restaurar imagens padrões
+    $routes->get('restaurarEvento/(:num)', 'EventoController::restaurar/$1');
+
 });

@@ -15,7 +15,7 @@ class EventoController extends BaseController
         $itens = $eventoModel->findAll();
 
         $dados["imagens"] = $itens;
-
+        
         return view("secoes/secaoEvento", $dados);
     }
 

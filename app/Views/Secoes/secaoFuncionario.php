@@ -36,6 +36,9 @@
                 <button type="reset">Limpar</button>
             </div>
 
+            <a href="/imagensPadrao/192x232.svg" download>
+                <img src="/img/baixarPadrão.png" class="baixarImg">
+            </a>
         </form>
     </section>
 
@@ -45,8 +48,12 @@
             <div class="item">
                 <img src="/upload/funcionarios/<?= $imagem["imagem"] ?>" class="imagemLista">
                 <div>
-                    <a href="/editSecoes/deletarFuncionario/<?= $imagem["idFuncionario"] ?>">🗑️</a>
-                    <a href="/editSecoes/funcionarios/editFuncionario/<?= $imagem["idFuncionario"] ?>">✏️</a>
+                    <a href="/editSecoes/deletarFuncionario/<?= $imagem["idFuncionario"] ?>">
+                        <img src="/img/lixeira.png" class="lixeira">
+                    </a>
+                    <a href="/editSecoes/funcionarios/editFuncionario/<?= $imagem["idFuncionario"] ?>">
+                        <img src="/img/editar.png" class="editar">
+                    </a>
                 </div>
             </div>
         <?php endforeach; ?>
