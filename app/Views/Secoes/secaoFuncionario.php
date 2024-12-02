@@ -21,15 +21,15 @@
             </div>
             <div class="info">
                 <label for="instagram">Instagram:</label>
-                <input type="text" name="instagram" class="instagram" autocomplete="off">
+                <input type="text" name="instagram" class="instagram" autocomplete="off" placeholder="https://www.instagram.com/nomedaconta/">
             </div>
             <div class="info">
                 <label for="x">X:</label>
-                <input type="text" name="x" class="x" autocomplete="off">
+                <input type="text" name="x" class="x" autocomplete="off" placeholder="https://x.com/nomedaconta">
             </div>
             <div class="info">
                 <label for="tiktok">TikTok:</label>
-                <input type="text" name="tiktok" class="tiktok" autocomplete="off">
+                <input type="text" name="tiktok" class="tiktok" autocomplete="off" placeholder="https://www.tiktok.com/@nomedaconta?...">
             </div>
             <div class="btn">
                 <button type="submit">Salvar Funcionário</button>

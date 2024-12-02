@@ -111,3 +111,7 @@ button{
 .lixeira, .editar{
     height: 25px;
 }
+
+.instagram, .x, .tiktok{
+    width: 72%;
+}
