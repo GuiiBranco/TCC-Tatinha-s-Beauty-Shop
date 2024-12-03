@@ -105,8 +105,8 @@
         <div class="divDiaNoiva">
             <div>
                 <img src="img/tituloDiaNoiva.png" class="tituloDiaNoiva">
-                <a href="https://www.instagram.com/tatinhas_beauty_shop/" target="_blank">
-                    <span class="btnLinkDiaNoiva">confira nossos pacotes</span>
+                <a href="https://wa.me/5515991902414" target="_blank">
+                    <span class="btnLinkDiaNoiva">entrar em contato</span>
                 </a>
             </div>
             <img src="img/bouquet.png" class="imgBouquet">
