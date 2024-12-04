@@ -17,9 +17,9 @@ CREATE TABLE funcionarios(
     idFuncionario INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(30) NOT NULL,
     imagem VARCHAR(50) NOT NULL UNIQUE,
-    instagram VARCHAR(40) NULL,
-    x VARCHAR(40) NULL,
-    tiktok VARCHAR(40) NULL
+    instagram VARCHAR(99) NULL,
+    x VARCHAR(99) NULL,
+    tiktok VARCHAR(99) NULL
 )Engine=InnoDB;
 
 CREATE TABLE admin(
