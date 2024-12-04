@@ -122,14 +122,14 @@
 
     <section id="fotosSalao">
         <div class="divImgSalao">
-            <img src="img/imagensSalao.svg" class="imgSalao">
+            <img src="img/fotosSalao.svg" class="imgSalao">
             <img src="img/descSalao.svg" class="legendaSalao">
         </div>
         <img class="pattern" src="img/fotosSalaoPattern.png">
     </section>
 
     <section id="roupas">
-        <img src="img/background-roupas.svg">
+        <img src="img/roupas.jpg">
         <div class="contorno2">
             <div>
                 <h1>GARANTA SEU LOOK</h1>

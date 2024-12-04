@@ -18,16 +18,6 @@
             height: 100vh;
             display: flex;
             background-color: #202426;
-        }
-
-        main{
-            margin: auto;
-            border: solid #F27781;
-            border-radius: 1rem;
-            height: 90%;
-            width: 50rem;
-            display: flex;
-            align-items: center;
             color: white;
         }
 
@@ -107,7 +97,6 @@
 
 </head>
 <body>
-    <main>
         <div class="infoAntiga">
             <img src="/upload/funcionarios/<?= $funcionario["imagem"] ?>">
             <span>Nome atual: <?= $funcionario["nome"] ?></span>

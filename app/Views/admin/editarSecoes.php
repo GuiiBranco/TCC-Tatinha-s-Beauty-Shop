@@ -18,6 +18,7 @@
         <a href="editSecoes/funcionarios" class="link">
             <span>Seção de Funcionários</span>
         </a>
+        <img src="/img/logo.svg" class="logo">
     </main>
     <a href="/logout" class="logout">Logout</a>
 </body>

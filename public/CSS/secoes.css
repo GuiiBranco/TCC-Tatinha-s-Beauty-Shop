@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    background-color: #202426;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #FF9090;
+    border-radius: 2rem;
+}
+
 body{
     background-color: #202426;
     height: 100vh;
@@ -59,7 +69,7 @@ body{
 .imagemLista{
     background-color: white;
     width: 8rem;
-    height: 10rem;
+    max-height: 10rem;
 }
 
 a{

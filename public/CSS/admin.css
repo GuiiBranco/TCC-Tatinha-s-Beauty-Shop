@@ -20,6 +20,10 @@ main{
     gap: 3rem;
 }
 
+.logo{
+    height: 4rem;
+}
+
 a, span{
     text-decoration: none;
     color: white;
@@ -32,6 +36,11 @@ a, span{
     border-radius: 1rem;
     font-size: 1.5rem;
     font-family: 'Inter';
+}
+
+span{
+    border: solid #D95B66;
+    border-width: 3px;
 }
 
 .logout{
